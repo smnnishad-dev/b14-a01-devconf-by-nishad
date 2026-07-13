@@ -1,0 +1,572 @@
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 80px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo h2 {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #2F5BEA;
+}
+
+/* Button */
+.btn {
+    background-color: #2F5BEA;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 25px;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #2348c7;
+}
+
+/* Hero Section */
+
+.hero {
+    height: 90vh;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
+        url("./assets/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 750px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero-content em {
+    font-style: italic;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    display: inline-block;
+
+    background-color: #2F5BEA;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 16px 40px;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero-btn:hover {
+    background-color: #2348c7;
+}
+
+/* ===========================
+   Speakers Section
+=========================== */
+
+.speakers {
+    padding: 100px 80px;
+    background-color: #ffffff;
+}
+
+.speakers h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+/* Grid */
+
+.speaker-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+/* Card */
+
+.speaker-card {
+
+    background-color: white;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+/* Image */
+
+.speaker-card img {
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+/* Content */
+
+.speaker-info {
+
+    padding: 18px;
+
+}
+
+.speaker-info h5 {
+
+    color: #2F5BEA;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+
+}
+
+.speaker-info h3 {
+
+    font-size: 26px;
+
+    margin-bottom: 10px;
+
+}
+
+.speaker-info p {
+
+    color: #666;
+
+    font-size: 15px;
+
+}
+
+/* ===========================
+   Pricing Section
+=========================== */
+
+.pricing {
+
+    padding: 100px 80px;
+
+    background: #f8f9fc;
+
+    text-align: center;
+}
+
+.pricing h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+.pricing-subtitle {
+
+    color: #666;
+
+    margin-bottom: 60px;
+
+    font-size: 18px;
+}
+
+/* Cards */
+
+.pricing-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+}
+
+/* Individual Card */
+
+.price-card {
+
+    background: white;
+
+    border: 1px solid #e4e4e4;
+
+    border-radius: 12px;
+
+    padding: 40px 30px;
+
+    width: 320px;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.price-card h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+.price-card h1 {
+
+    font-size: 48px;
+
+    color: #2F5BEA;
+
+    margin-bottom: 30px;
+}
+
+/* List */
+
+.price-card ul {
+
+    list-style: none;
+
+    text-align: left;
+
+    margin-bottom: 40px;
+
+}
+
+.price-card li {
+
+    margin-bottom: 15px;
+
+    color: #555;
+}
+
+/* Button */
+
+.price-btn {
+
+    margin-top: auto;
+
+    text-decoration: none;
+
+    background: #2F5BEA;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+/* Featured Card */
+
+.featured {
+
+    background: #2F5BEA;
+
+    color: white;
+
+    transform: scale(1.05);
+
+}
+
+.featured h1 {
+
+    color: white;
+
+}
+
+.featured li {
+
+    color: white;
+
+}
+
+.featured-btn {
+
+    background: white;
+
+    color: #2F5BEA;
+
+}
+
+/* ===========================
+   Conference Highlights
+=========================== */
+
+.schedule {
+
+    padding: 100px 80px;
+
+    background: #ffffff;
+}
+
+.schedule-title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.schedule-title h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+.schedule-title p {
+
+    color: #666;
+
+    font-size: 18px;
+}
+
+/* Grid */
+
+.schedule-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+/* Card */
+
+.schedule-card {
+
+    background: #F7F9FC;
+
+    border-left: 6px solid #2F5BEA;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    transition: .3s;
+}
+
+.schedule-card:hover {
+
+    transform: translateY(-6px);
+}
+
+.time {
+
+    display: inline-block;
+
+    background: #2F5BEA;
+
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    margin-bottom: 18px;
+
+    font-size: 14px;
+}
+
+.schedule-card h3 {
+
+    margin-bottom: 15px;
+
+    font-size: 24px;
+}
+
+.schedule-card p {
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+.footer {
+
+    background: #2f71ff;
+
+    color: white;
+
+    padding: 50px 80px 25px;
+}
+
+/* Top */
+
+.footer-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+/* Logo */
+
+.footer-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.footer-logo img {
+
+    width: 100px;
+}
+
+.logo-text h3 {
+
+    font-size: 20px;
+}
+
+
+/* Icons */
+
+.social-icons {
+
+    display: flex;
+
+    gap: 18px;
+}
+
+.social-icons a {
+
+    color: rgb(171, 16, 16);
+
+    font-size: 20px;
+
+    width: 42px;
+
+    height: 42px;
+
+    border: 1px solid #555;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: .3s;
+}
+
+.social-icons a:hover {
+
+    background: #ffffff;
+
+    border-color: #ffffff;
+}
+
+/* Divider */
+
+.footer hr {
+
+    border: none;
+
+    border-top: 1px solid #444;
+
+    margin-bottom: 25px;
+}
+
+/* Copyright */
+
+.copyright {
+
+    text-align: center;
+
+    color: #bdbdbd;
+
+    font-size: 15px;
+}
